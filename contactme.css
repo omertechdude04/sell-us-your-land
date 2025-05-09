@@ -313,15 +313,17 @@ footer {
     border-radius: 8px;
     padding: 16px 24px;
     position: fixed;
+    top: 50%;
     bottom: 30px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     font-size: 16px;
     z-index: 9999;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
     opacity: 0;
     transition: opacity 0.4s ease, transform 0.4s ease;
   }
+
   
   .toast.show {
     visibility: visible;
