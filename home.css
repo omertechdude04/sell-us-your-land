@@ -633,12 +633,7 @@ footer .credit a:hover {
     grid-template-columns: 1fr;
     gap: 30px;
     justify-items: center;
-    margin-left: -10px;
-  }
-
-  .image-card {
-    width: 300px;
-    margin: 0 auto;
+    margin-left: -15px;
   }
 
 
@@ -648,11 +643,17 @@ footer .credit a:hover {
     justify-items: center;
   }
 
-  .container.image-questions-grid2 {
-    margin-left: 0;      /* Remove desktop offset */
+  .container.image-questions-grid {
+    margin-left: 10px;      /* Remove desktop offset */
     margin-right: 0;     /* Ensure no right offset */
-    padding: 0 20px;     /* Optional: small side padding */
   }
+
+  .container.image-questions-grid2 {
+    margin-left: 10px;      /* Remove desktop offset */
+    margin-right: 0;     /* Ensure no right offset */
+  }
+
+  
 
   .image-card {
     margin-left: 0;      /* Reset the negative margin */
