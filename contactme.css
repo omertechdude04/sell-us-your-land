@@ -368,3 +368,51 @@ footer .credit a:hover {
       margin-right: 0;
     }
   }
+
+  @media screen and (max-height: 500px) and (max-width: 900px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  header {
+    padding: 0;                 /* slimmer bar */
+    height: 130px;
+  }
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* push logo left, nav right */
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  height: 130px;
+  margin: 0;
+  transform: translateY(50px); /* adjust for visual balance */
+  margin-left: 50px;
+}
+
+/* Nav list on the right */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+
+  .nav-links li a {
+    font-size: 0.9rem;          /* slightly smaller text */
+  }
+
+  /* Optional contact button (if you keep it) */
+  .contact-button {
+    margin: 0 0 0 14px;         /* sit just right of the links */
+    padding: 8px 18px;
+    font-size: 0.8rem;
+  }
+  }
