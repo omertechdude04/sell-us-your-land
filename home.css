@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: 'Cal Sans', sans-serif;
   background-color: #f3f5fa;
@@ -60,14 +62,13 @@ header.transparent {
   box-shadow: none;
 }
 
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
   height: 100px;
 }
 
@@ -75,31 +76,33 @@ header.transparent {
   height: 160px;
   object-fit: contain;
   margin-top: 100px;
-  margin-left: -160px;
+  margin-left: -50px;
 }
 
 /* NAVIGATION */
-.nav-links {
-  display: flex;
-  gap: 30px;
-}
-
-
-
-.nav-links li a {
-  color: black;
-  text-transform: uppercase;
-  font-size: 0.95rem;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none; 
+    padding-left: 0;    
+    margin: 0;  
+  }
+  
+  .nav-links li a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+  }
 
 header.transparent .nav-links li a {
   color: white;
   text-shadow: 
-  -1px -1px 0 black,
-   1px -1px 0 black,
-  -1px  1px 0 black,
-   1px  1px 0 black;
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
 }
 
 .nav-links li a:hover {
@@ -107,24 +110,26 @@ header.transparent .nav-links li a {
   transform: translateY(-2px);
 }
 
-.contact-button {
-  background-color: rgba(29, 71, 155, 1);
-  color: white;
-  padding: 15px 30px;
-  border-radius: 10px;
-  transition: background 0.3s;
-  display: inline-block;
-  margin-top: -20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: none;
-  margin-right: -160px;
-}
+  .contact-button {
+    background-color: rgba(29, 71, 155, 1);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: background 0.3s;
+    display: inline-block;
+    margin-top: -20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    margin-right: -160px;
+  }
+  
+  .contact-button:hover {
+    background-color: rgba(29, 71, 155, 1);
+    cursor: pointer;
+  }
 
-.contact-button:hover {
-  background-color: rgba(29, 71, 155, 1);
-  cursor: pointer;
-}
 
 
 /* --- INFO SECTION --- */
@@ -210,6 +215,10 @@ h3 {
   margin-top: 40px;
 }
 
+.container.image-questions-grid {
+  margin-left: -10px; /* Adjust this value as needed */
+}
+
 .image-card {
   background-color: white;
   border-radius: 10px;
@@ -232,6 +241,46 @@ h3 {
   color: black;
   margin-top: 10px;
 }
+
+.image-questions-grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 40px;
+  justify-items: center; /* This ensures items inside the grid are centered */
+}
+
+.container.image-questions-grid2 {
+  margin-left: 0; /* Adjust this to 0 to ensure it’s centered */
+}
+
+.image-card2 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  padding: 25px;
+  transition: transform 0.2s ease;
+  text-align: left;
+  font-family: 'Cal Sans', sans-serif;
+  font-size: 1.1rem; /* Make text slightly larger */
+  width: 350px;
+  margin-left: -100px;
+}
+
+.image-card2:hover {
+  transform: translateY(-5px);
+}
+
+.image-card2 p {
+  font-size: 1rem;
+  color: black;
+  margin-top: 10px;
+}
+
+.container.image-questions-grid2 {
+  margin-left: 160px; /* Adjust this value as needed */
+}
+
 
  /* --- CENTER TEXT SECTIONS --- */
  .text-center {
@@ -542,8 +591,9 @@ footer .credit a:hover {
   }
 
   .logo {
-    height: 100px;
+    height: 140px;
     margin: 0;
+    transform: translateY(70px); /* adjust value as needed */
   }
 
   .nav-links {
@@ -589,6 +639,25 @@ footer .credit a:hover {
   .image-card {
     width: 300px;
     margin: 0 auto;
+  }
+
+
+  .image-questions-grid2 {
+    grid-template-columns: 1fr; /* Stack in one column */
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .container.image-questions-grid2 {
+    margin-left: 0;      /* Remove desktop offset */
+    margin-right: 0;     /* Ensure no right offset */
+    padding: 0 20px;     /* Optional: small side padding */
+  }
+
+  .image-card {
+    margin-left: 0;      /* Reset the negative margin */
+    width: 100%;         /* Optional: responsive width */
+    max-width: 350px;    /* Keep the card from getting too wide */
   }
 
   .step {
