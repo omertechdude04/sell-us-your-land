@@ -62,7 +62,7 @@ header.transparent {
 /* NAVIGATION */
   .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     list-style: none; 
     padding-left: 0;    
     margin: 0;  
@@ -73,7 +73,7 @@ header.transparent {
   .nav-links li a {
     color: black;
     text-transform: uppercase;
-    font-size: 0.95rem;
+    font-size: 1rem;
     transition: color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
   }
@@ -343,21 +343,22 @@ footer .credit a:hover {
  .header-container {
     flex-direction: row;
     justify-content: space-between;
-    height: 140px;
+    height: 150px;
     padding: 0 10px;
   }
 
   .logo {
-    height: 140px;
+    height: 150px;
     margin: 0;
     transform: translateY(70px); /* adjust value as needed */
   }
   
   .nav-links {
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
     justify-content: flex-end;
     margin-right: -15px;
+    font-weight: bold;
   }
   
     .contact-button {
