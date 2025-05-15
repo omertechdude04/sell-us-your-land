@@ -56,7 +56,7 @@ header.transparent {
   height: 160px;
   object-fit: contain;
   margin-top: 100px;
-  margin-left: -10px;
+  transform: translateX(-85px);
 }
 
 /* NAVIGATION */
