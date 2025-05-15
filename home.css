@@ -269,6 +269,7 @@ h3 {
 }
 
 
+
 .image-card2:hover {
   transform: translateY(-5px);
 }
@@ -280,7 +281,7 @@ h3 {
 }
 
 .container.image-questions-grid2 {
-  margin-left: 160px; /* Adjust this value as needed */
+  margin: 0 auto;
 }
 
 
