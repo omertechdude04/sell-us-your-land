@@ -278,7 +278,7 @@ h3 {
 }
 
 .container.image-questions-grid2 {
-  margin-left: 160px; /* Adjust this value as needed */
+  transform: translateX(-10px);
 }
 
 
